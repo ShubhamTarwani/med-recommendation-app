@@ -94,7 +94,6 @@ if st.button("Diagnose & Find Medicines", type="primary"):
         
         st.error(f"**🩺 Predicted Disease / Condition:** `{predicted_disease}`")
         st.success(f"**🔬 Recommended Active Ingredient:** `{predicted_ingredient}`")
-        st.info(f"**Clinical Confidence Score:** 100.00% (Deterministic Medical Mapping)")
         
         if not clinical_profile.empty:
             best_match_drug = clinical_profile.iloc[0] # Grab the first matching clinical profile
